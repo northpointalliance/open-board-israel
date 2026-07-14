@@ -4,6 +4,10 @@
 
 **Who this is for:** Job seekers across Israel — including people **recently laid off** in tech and other sectors, olim, freelancers, and anyone checking what they're owed or what's required of employers. Olim-specific notes appear where relevant but the rights below apply to **all employees** under Israeli law.
 
+> **Pinned:** Minimum wage from April 1, 2026 = **₪6,443.85/month** (full-time).  
+> **Recently laid off?** Read [If you were recently laid off — start here](#if-you-were-recently-laid-off--start-here) first.  
+> **Add labor law attorneys** under **Community Resources** in the [spreadsheet](https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit), not only here.
+
 **Last community review:** July 2026  
 **Primary sources:** Knesset legislation, National Insurance Institute (Bituach Leumi), Ministry of Economy and Industry, Labour Courts
 

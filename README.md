@@ -24,6 +24,7 @@ Open, collaborative resources for **anyone looking for work in Israel** — incl
    - `open-positions.csv` → rename tab **Open Positions**
    - `hr-referral-positions.csv` → rename tab **HR & Referrals**
    - `talent-profiles.csv` → rename tab **Talent Profiles**
+   - `community-resources.csv` → rename tab **Community Resources** (wiki: attorneys, HR, olim services)
 4. **Share → General access → Anyone with the link → Editor**  
    (Use **Commenter** instead if you want posts reviewed before they stick.)
 5. Copy the sheet URL — you'll link it from your landing page.
@@ -61,6 +62,7 @@ The two pages cross-link: **Daniel's Corner** (personal CV help) ↔ **Open Boar
 | **Open Positions** | Anyone | Fast job posts: role, company, location, contact |
 | **HR & Referrals** | HR, recruiters, people with connections | Verified or insider roles, referral-friendly |
 | **Talent Profiles** | Job seekers (incl. recently laid off), freelancers, olim | Mini-CV, languages, travel radius, NIS hourly gigs |
+| **Community Resources** | Anyone | Wiki-style directory: labor law attorneys, HR contacts, government links, olim services |
 
 ---
 
@@ -71,6 +73,12 @@ HOW TO POST A JOB (30 seconds)
 1. Scroll to the first empty row
 2. Fill: Date | Role | Company | Location | Type | Salary range (NIS) | Contact | Notes
 3. Do not delete others' rows — add a new row only
+
+RECRUITER & HR GUIDELINE (in-house / company recruiters)
+- Do NOT ask applicants upfront what salary they expect.
+- Israeli hiring often hides compensation; job seekers usually don't know what the role pays.
+- Post the salary range (or best estimate) in the listing instead — that's fairer.
+- This is the site owner's community standard, not legal advice.
 
 HOW TO ADD YOUR PROFILE
 → Go to the "Talent Profiles" tab
@@ -84,6 +92,7 @@ HOW TO ADD YOUR PROFILE
 - Pin the **minimum wage** row in the law doc (updates every April 1)
 - Assign 1–2 moderators to hide spam rows (View → Hidden rows) or switch sheet to Commenter + weekly approval
 - Add a **Last verified** column when community members confirm a law figure or job is still open
+- **Salary transparency:** In-house recruiters should post a salary range and avoid leading with "what are your salary expectations?" — applicants often lack pay information in Israel
 
 ---
 
@@ -100,7 +109,8 @@ open-board-israel/
 └── sheets/
     ├── open-positions.csv
     ├── hr-referral-positions.csv
-    └── talent-profiles.csv
+    ├── talent-profiles.csv
+    └── community-resources.csv
 ```
 
 ---

@@ -4,17 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel's Corner | CV & Job Search Help in Israel</title>
+    <meta name="description" content="Free personal CV and job-search help in Israel for people recently laid off, olim, and career changers. Community job board and employment law wiki at Open Board Israel.">
+    <meta name="geo.region" content="IL">
+    <meta name="geo.placename" content="Israel">
+    <link rel="canonical" href="https://danielrosenthal-helpolim.pages.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daniel's Corner | CV & Job Search Help in Israel">
+    <meta property="og:description" content="Free CV help, LinkedIn strategy, and local job leads in Israel. Not legal advice.">
+    <meta property="og:url" content="https://danielrosenthal-helpolim.pages.dev/">
+    <meta property="og:locale" content="en_IL">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Open Board Israel",
+      "alternateName": "Daniel's Corner",
+      "url": "https://danielrosenthal-helpolim.pages.dev/",
+      "inLanguage": "en",
+      "description": "Personal CV help and community employment resources in Israel.",
+      "about": { "@type": "Place", "name": "Israel" }
+    }
+    </script>
     <style>
+        :root {
+            --bg: #dbeafe;
+            --bg-surface: #eff6ff;
+            --card: #f8fbff;
+            --text: #0f172a;
+            --muted: #334155;
+            --accent: #1d4ed8;
+            --accent-dark: #1e3a8a;
+            --border: #93c5fd;
+            --focus: #2563eb;
+            --disclaimer-bg: #fef3c7;
+            --disclaimer-border: #d97706;
+            --disclaimer-text: #78350f;
+        }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+        }
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            z-index: 100;
+            padding: 0.75rem 1rem;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            left: 0.5rem;
+            top: 0.5rem;
+            outline: 3px solid var(--focus);
+            outline-offset: 2px;
+        }
+        a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 
         body {
-            background-color: #f8fafc;
-            color: #334155;
+            background-color: var(--bg);
+            color: var(--text);
             line-height: 1.6;
         }
 
@@ -33,12 +90,22 @@
         }
 
         .top-nav a {
-            color: #38bdf8;
-            text-decoration: none;
+            color: #7dd3fc;
+            text-decoration: underline;
             font-weight: 600;
         }
 
-        .top-nav a:hover { text-decoration: underline; }
+        .top-nav a:hover { color: #bae6fd; }
+
+        .disclaimer {
+            background: var(--disclaimer-bg);
+            border-bottom: 2px solid var(--disclaimer-border);
+            padding: 0.85rem 1.25rem;
+            text-align: center;
+            font-size: 0.92rem;
+            color: var(--disclaimer-text);
+        }
+        .disclaimer strong { color: #92400e; }
 
         header {
             background: linear-gradient(135deg, #1e3a8a 0%, #0d9488 100%);
@@ -98,8 +165,8 @@
         }
 
         .community-banner {
-            background: #eef4fb;
-            border-bottom: 1px solid #c5d9f0;
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--border);
             padding: 1rem 0;
             text-align: center;
             font-size: 1rem;
@@ -112,7 +179,7 @@
 
         .services-section {
             padding: 60px 0;
-            background-color: #ffffff;
+            background-color: var(--bg-surface);
         }
 
         .section-title {
@@ -140,9 +207,10 @@
         }
 
         .service-card {
-            background: #f8fafc;
+            background: var(--card);
             padding: 30px;
             border-radius: 8px;
+            border: 1px solid var(--border);
             border-top: 4px solid #0d9488;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
             text-align: center;
@@ -170,11 +238,11 @@
 
         .testimonials-section {
             padding: 60px 0;
-            background-color: #f1f5f9;
+            background-color: var(--bg);
         }
 
         .featured-testimonial {
-            background: white;
+            background: var(--card);
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -202,7 +270,8 @@
         }
 
         .testimonial-card {
-            background: white;
+            background: var(--card);
+            border: 1px solid var(--border);
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
@@ -275,10 +344,16 @@
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <nav class="top-nav">
-        Personal CV help here · Community job board: <a href="/board/">Open Board Israel →</a>
+    <nav class="top-nav" aria-label="Site navigation">
+        Personal CV help here · Community job board: <a href="/board/">Open Board Israel</a>
     </nav>
+
+    <aside class="disclaimer" role="note" aria-label="Legal disclaimer">
+        <strong>Not legal advice:</strong> The site owner and developer are not attorneys and do not provide legal advice.
+        Employment law content on <a href="/board/" style="color:#92400e;font-weight:700;">Open Board Israel</a> is community reference only — consult a qualified Israeli employment lawyer for your situation.
+    </aside>
 
     <header>
         <div class="container logo-area">
@@ -292,12 +367,13 @@
     </header>
 
     <div class="community-banner">
-        Also see <a href="/board/">Open Board Israel</a> — post roles, add your mini-CV, and read employment law in English (community sheet + doc).
+        Also see <a href="/board/">Open Board Israel</a> — post roles, add your mini-CV, contribute to the community wiki (labor law attorneys, HR contacts), and read employment law in English.
     </div>
 
-    <section class="services-section">
+    <main id="main">
+    <section class="services-section" aria-labelledby="services-heading">
         <div class="container">
-            <h2 class="section-title">Personal, local help</h2>
+            <h2 class="section-title" id="services-heading">What personal job-search help is available in Israel?</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <h3>In-Depth CV Assistance</h3>
@@ -317,15 +393,15 @@
                 </div>
                 <div class="service-card">
                     <h3>Open Board Israel</h3>
-                    <p>Community spreadsheet for jobs, HR referrals, talent profiles, and employment-law reference. <a href="/board/">Go to the board →</a></p>
+                    <p>Community wiki and spreadsheet for jobs, HR referrals, talent profiles, labor law attorneys, and employment-law reference. <a href="/board/">Go to the board</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials-section">
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
         <div class="container">
-            <h2 class="section-title">Success Stories</h2>
+            <h2 class="section-title" id="testimonials-heading">What results have people seen with CV help?</h2>
 
             <div class="featured-testimonial">
                 <p>"I was in a bind. No matter how many resumes I sent I only received a handful of automated rejection letters. I have been in the workforce for 15 years and each time I was able to land a job I took it, not because I wanted to but because it was my only option.</p>
@@ -384,6 +460,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <footer id="contact">
         <div class="container">
@@ -392,7 +469,7 @@
                 <p>Email: <a href="mailto:dan72ros@gmail.com" class="contact-link">dan72ros@gmail.com</a></p>
                 <p>Phone / WhatsApp: <a href="https://wa.me/972587490020" class="contact-link" target="_blank" rel="noopener">058-749-0020</a></p>
             </div>
-            <p class="footer-board">Community resources: <a href="/board/" class="contact-link">Open Board Israel</a> (jobs, profiles, employment law)</p>
+            <p class="footer-board">Community resources: <a href="/board/" class="contact-link">Open Board Israel</a> (jobs, wiki, profiles, employment law) · Not legal advice</p>
         </div>
     </footer>
 

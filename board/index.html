@@ -3,27 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Open Board Israel — Jobs, Talent & Employment Law</title>
+  <title>Open Board Israel — Jobs, Community Wiki & Employment Law</title>
+  <meta name="description" content="Community wiki and job board for Israel: post open roles, share talent profiles, find labor law attorneys, and read employment law in English. For job seekers, olim, and people recently laid off.">
+  <meta name="geo.region" content="IL">
+  <meta name="geo.placename" content="Israel">
+  <link rel="canonical" href="https://danielrosenthal-helpolim.pages.dev/board/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Open Board Israel — Jobs, Community Wiki & Employment Law">
+  <meta property="og:description" content="Community-editable wiki for jobs, talent, and employment resources in Israel. Not legal advice.">
+  <meta property="og:url" content="https://danielrosenthal-helpolim.pages.dev/board/">
+  <meta property="og:locale" content="en_IL">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Open Board Israel",
+    "description": "Community wiki and job board for employment resources in Israel.",
+    "url": "https://danielrosenthal-helpolim.pages.dev/board/",
+    "inLanguage": "en",
+    "about": {
+      "@type": "Thing",
+      "name": "Employment in Israel",
+      "description": "Jobs, talent profiles, labor law reference, and community-contributed professional resources."
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Open Board Israel",
+      "url": "https://danielrosenthal-helpolim.pages.dev/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where can I post an open job in Israel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open Board Israel uses a shared Google Sheet. Go to the Open Positions tab and add a row with the role, company, location, salary range in NIS, and contact details."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add a labor law attorney or other resource to the community wiki?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open the Community Resources tab in the shared spreadsheet and add a new row with the category, resource name, description, languages, and contact or website. Anyone with edit access can contribute."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should recruiters ask job seekers for salary expectations first in Israel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open Board Israel asks in-house recruiters and HR not to lead with salary-expectation questions. Israeli hiring often lacks pay transparency, so candidates usually do not know the role's compensation. Posters should include a salary range in the listing instead of putting that burden on the applicant."
+        }
+      },
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The site owner and developer are not attorneys and do not provide legal advice. Employment law content is a community reference only. Consult a qualified Israeli employment lawyer for your situation."
+        }
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
-      --bg: #f8f9fb;
-      --card: #fff;
-      --text: #1a1a2e;
-      --muted: #5c6370;
-      --accent: #0066cc;
-      --accent-dark: #004999;
-      --border: #e2e6ea;
-      --success: #0d7a4a;
+      --bg: #dbeafe;
+      --bg-surface: #eff6ff;
+      --card: #f8fbff;
+      --text: #0f172a;
+      --muted: #334155;
+      --accent: #1d4ed8;
+      --accent-dark: #1e3a8a;
+      --border: #93c5fd;
+      --success: #047857;
       --personal: #0f766e;
+      --warn-bg: #fffbeb;
+      --warn-border: #f59e0b;
+      --warn-text: #78350f;
+      --disclaimer-bg: #fef3c7;
+      --disclaimer-border: #d97706;
+      --focus: #2563eb;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
     body {
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.55;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
+    }
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 100;
+      padding: 0.75rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      left: 0.5rem;
+      top: 0.5rem;
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
     }
     .top-nav {
       background: #0f172a;
@@ -33,39 +133,71 @@
       font-size: 0.95rem;
     }
     .top-nav a {
-      color: #38bdf8;
-      text-decoration: none;
+      color: #7dd3fc;
+      text-decoration: underline;
       font-weight: 600;
     }
-    .top-nav a:hover { text-decoration: underline; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 1.25rem; }
-    header { text-align: center; margin-bottom: 1.5rem; }
-    h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
-    .sub { color: var(--muted); font-size: 1.05rem; max-width: 36em; margin: 0 auto; }
+    .top-nav a:hover { color: #bae6fd; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 1.25rem; }
+    header { text-align: center; margin-bottom: 1.25rem; }
+    h1 { font-size: 1.85rem; margin: 0 0 0.5rem; color: var(--accent-dark); }
+    .sub { color: var(--muted); font-size: 1.05rem; max-width: 38em; margin: 0 auto; }
+    .disclaimer {
+      background: var(--disclaimer-bg);
+      border: 2px solid var(--disclaimer-border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--warn-text);
+    }
+    .disclaimer strong { display: block; margin-bottom: 0.35rem; font-size: 1rem; color: #92400e; }
     .banner {
-      background: #eef4fb;
-      border: 1px solid #c5d9f0;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       border-radius: 10px;
       padding: 1rem 1.25rem;
       margin-bottom: 1.25rem;
       font-size: 0.95rem;
     }
     .banner strong { color: var(--text); }
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .toc h2 { font-size: 1rem; margin: 0 0 0.6rem; }
+    .toc ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      columns: 2;
+      column-gap: 1.5rem;
+    }
+    .toc li { margin-bottom: 0.35rem; break-inside: avoid; }
+    .toc a { color: var(--accent); font-weight: 600; }
     .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 1.25rem 1.5rem;
       margin-bottom: 1rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,.04);
+      box-shadow: 0 1px 3px rgba(29, 78, 216, 0.06);
     }
     .card-personal {
-      border-color: #99d4c9;
-      background: linear-gradient(135deg, #f0fdfa 0%, #fff 100%);
+      border-color: #5eead4;
+      background: linear-gradient(135deg, #ecfeff 0%, var(--card) 100%);
     }
-    .card h2 { font-size: 1.15rem; margin: 0 0 0.75rem; }
+    .card-wiki {
+      border-color: #60a5fa;
+      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--card) 100%);
+    }
+    .card h2 { font-size: 1.15rem; margin: 0 0 0.75rem; color: var(--accent-dark); }
+    .card h3 { font-size: 1rem; margin: 1rem 0 0.5rem; color: var(--text); }
     .card p { margin: 0 0 0.75rem; color: var(--muted); font-size: 0.95rem; }
     .card p:last-child { margin-bottom: 0; }
+    .card a { color: var(--accent); }
     .btn-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
     a.btn {
       display: inline-block;
@@ -79,135 +211,225 @@
     a.btn-primary:hover { background: var(--accent-dark); }
     a.btn-personal { background: var(--personal); color: #fff; }
     a.btn-personal:hover { background: #0d5c56; }
-    a.btn-secondary { background: #eef2f7; color: var(--text); border: 1px solid var(--border); }
-    a.btn-secondary:hover { background: #e4e9ef; }
+    a.btn-secondary { background: var(--bg-surface); color: var(--text); border: 1px solid var(--border); }
+    a.btn-secondary:hover { background: #dbeafe; }
     .steps { margin: 0; padding-left: 1.25rem; color: var(--text); font-size: 0.95rem; }
     .steps li { margin-bottom: 0.4rem; }
+    .wiki-cats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .wiki-cat {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-size: 0.9rem;
+    }
+    .wiki-cat strong { display: block; color: var(--accent-dark); margin-bottom: 0.25rem; }
     .tag {
       display: inline-block;
       font-size: 0.75rem;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.03em;
       color: var(--success);
-      background: #e8f5ee;
+      background: #d1fae5;
       padding: 0.2rem 0.5rem;
       border-radius: 4px;
       margin-bottom: 0.5rem;
     }
-    .tag-personal {
-      color: #0f766e;
-      background: #ccfbf1;
-    }
-    .tag-warn {
-      color: #8a5a00;
-      background: #fff4d6;
-    }
+    .tag-personal { color: #0f766e; background: #ccfbf1; }
+    .tag-warn { color: #92400e; background: #fde68a; }
+    .tag-wiki { color: #1e40af; background: #bfdbfe; }
     footer {
       text-align: center;
       margin-top: 2rem;
       font-size: 0.85rem;
       color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
     }
     footer a { color: var(--accent); }
-    .warn {
-      background: #fff8e6;
-      border: 1px solid #f0d78c;
+    .admin-note {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
       border-radius: 8px;
       padding: 0.75rem 1rem;
       font-size: 0.9rem;
       margin-top: 1.5rem;
+      color: var(--warn-text);
     }
-    code { background: #eef2f7; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.88em; }
+    .policy-note {
+      background: #ede9fe;
+      border: 2px solid #7c3aed;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0 0;
+      font-size: 0.95rem;
+      color: #4c1d95;
+    }
+    .policy-note strong { color: #5b21b6; }
+    @media (max-width: 600px) {
+      .toc ul { columns: 1; }
+    }
   </style>
 </head>
 <body>
-  <nav class="top-nav">
-    Need 1-on-1 CV help? <a href="/">Daniel's Corner — personal job & CV advice →</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="top-nav" aria-label="Site navigation">
+    Need 1-on-1 CV help? <a href="/">Daniel's Corner — personal job &amp; CV advice</a>
   </nav>
 
   <div class="wrap">
     <header>
       <h1>Open Board Israel</h1>
-      <p class="sub">Community board for job seekers, people recently laid off, freelancers, olim, and anyone hiring — post roles, share profiles, know your rights.</p>
+      <p class="sub">Community wiki and job board for Israel — post roles, share profiles, add trusted resources like labor law attorneys, and browse employment law in English.</p>
     </header>
 
-    <div class="card card-personal">
-      <span class="tag tag-personal">Personal help</span>
-      <h2>Daniel's Corner — local CV & job-search advice</h2>
-      <p>Free, personal help tailoring your CV for Israel, LinkedIn strategy, interview prep, and real leads from someone who knows the local market. Hundreds of people are searching — this is the human layer on top of the community board.</p>
-      <div class="btn-row">
-        <a class="btn btn-personal" href="/">Get personal CV help →</a>
-        <a class="btn btn-secondary" href="https://wa.me/972587490020" target="_blank" rel="noopener">WhatsApp Daniel</a>
+    <aside class="disclaimer" role="note" aria-label="Legal disclaimer">
+      <strong>Important: not legal advice</strong>
+      The developer and owner of this site are <strong>not attorneys</strong> and do <strong>not</strong> provide legal advice. Employment law notes, wiki entries, and community links are for general information only. Always consult a qualified Israeli employment lawyer (עורך דין לדיני עבודה) about severance, dismissal, contracts, or any dispute affecting your rights.
+    </aside>
+
+    <main id="main">
+      <nav class="toc" aria-labelledby="toc-heading">
+        <h2 id="toc-heading">On this page</h2>
+        <ul>
+          <li><a href="#personal-help">Personal CV help</a></li>
+          <li><a href="#jobs">Post open positions</a></li>
+          <li><a href="#recruiter-policy">Salary transparency policy</a></li>
+          <li><a href="#talent">Talent profiles</a></li>
+          <li><a href="#wiki">Community knowledge wiki</a></li>
+          <li><a href="#rights">Rights after layoff</a></li>
+          <li><a href="#law">Employment law reference</a></li>
+        </ul>
+      </nav>
+
+      <div class="banner">
+        <strong>Hundreds and thousands of people have been let off.</strong> This board is for everyone affected — not only olim. Add your profile, browse open roles, contribute to the community wiki, or read employment law basics for severance, notice, and dismissal hearings (שימוע).
       </div>
-    </div>
 
-    <div class="banner">
-      <strong>Hundreds and thousands of people have been let go.</strong> This board is for everyone affected — not only olim. Add your profile, browse open roles, or check employment law for severance, notice, and dismissal rights (שימוע).
-    </div>
+      <section class="card card-personal" id="personal-help" aria-labelledby="personal-heading">
+        <span class="tag tag-personal">Personal help</span>
+        <h2 id="personal-heading">How can I get personal CV and job-search help in Israel?</h2>
+        <p><strong>Daniel's Corner offers free, one-on-one help</strong> tailoring your CV for the Israeli market, LinkedIn strategy, interview prep, and real leads. It is the human layer on top of this community board.</p>
+        <div class="btn-row">
+          <a class="btn btn-personal" href="/">Get personal CV help</a>
+          <a class="btn btn-secondary" href="https://wa.me/972587490020" target="_blank" rel="noopener noreferrer">WhatsApp Daniel</a>
+        </div>
+      </section>
 
-    <div class="card">
-      <span class="tag">Fastest</span>
-      <h2>Post an open position</h2>
-      <p>Role, company, location, contact — add a row in under a minute. Hiring managers, HR, and anyone who knows of an opening can contribute.</p>
-      <ol class="steps">
-        <li>Open the shared spreadsheet</li>
-        <li>Go to tab <strong>Open Positions</strong></li>
-        <li>Fill the first empty row: date, role, company, location, salary (NIS), contact</li>
-      </ol>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="YOUR_GOOGLE_SHEET_URL#gid=0" target="_blank" rel="noopener">Open Positions sheet →</a>
-      </div>
-    </div>
+      <section class="card" id="jobs" aria-labelledby="jobs-heading">
+        <span class="tag">Fastest</span>
+        <h2 id="jobs-heading">How do I post an open position in Israel?</h2>
+        <p><strong>Add a row to the shared spreadsheet in under a minute.</strong> Hiring managers, HR, recruiters, and anyone with a lead can contribute role, company, location, and contact details.</p>
+        <ol class="steps">
+          <li>Open the shared spreadsheet</li>
+          <li>Go to tab <strong>Open Positions</strong> (or <strong>HR &amp; Referrals</strong> for in-house recruiters)</li>
+          <li>Fill the first empty row: date, role, company, location, <strong>salary range (NIS)</strong>, contact</li>
+        </ol>
+        <div class="policy-note" id="recruiter-policy" role="note" aria-label="Recruiter salary transparency policy">
+          <strong>For recruiters &amp; HR who work directly for a company</strong>
+          Please do <strong>not</strong> ask candidates upfront what salary they expect. Israeli hiring often lacks pay transparency — the person searching for a role usually <strong>does not know</strong> what the position pays. Asking them first is unfair: it puts the burden on someone who is already at an information disadvantage.
+          <br><br>
+          <strong>What we ask instead:</strong> include the salary range (or your best good-faith estimate) in the listing so applicants can decide before they reach out. This is a community guideline stated by the site owner — not a law, but a standard we encourage here.
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit#gid=0" target="_blank" rel="noopener noreferrer">Open Positions sheet</a>
+          <a class="btn btn-secondary" href="https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit#gid=206058523" target="_blank" rel="noopener noreferrer">HR &amp; Referrals tab</a>
+        </div>
+      </section>
 
-    <div class="card">
-      <span class="tag">HR & connectors</span>
-      <h2>HR / referral roles</h2>
-      <p>For human resources, recruiters, and employees who can refer candidates — especially when companies aren't posting publicly.</p>
-      <div class="btn-row">
-        <a class="btn btn-secondary" href="YOUR_GOOGLE_SHEET_URL" target="_blank" rel="noopener">HR & Referrals tab →</a>
-      </div>
-    </div>
+      <section class="card" id="talent" aria-labelledby="talent-heading">
+        <span class="tag">Job seekers</span>
+        <h2 id="talent-heading">How do job seekers add a mini portfolio or CV?</h2>
+        <p><strong>Use the Talent Profiles tab</strong> to list your skills, languages, travel range, and short-term gig rates in NIS. Note if you were recently laid off, are an oleh/olah, or are freelancing.</p>
+        <ol class="steps">
+          <li>Tab <strong>Talent Profiles</strong></li>
+          <li>Note your situation: job seeker, recently laid off, freelancer, olim, etc.</li>
+          <li>Languages, max travel, hourly rate (NIS), LinkedIn link</li>
+        </ol>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit#gid=155659438" target="_blank" rel="noopener noreferrer">Talent Profiles sheet</a>
+        </div>
+      </section>
 
-    <div class="card">
-      <span class="tag">Job seekers</span>
-      <h2>Add your mini portfolio / CV</h2>
-      <p>Recently laid off or actively looking? List who you are, languages, travel range, skills, and short-term gigs at your NIS hourly rate. For in-depth CV review, also see <a href="/">Daniel's Corner</a>.</p>
-      <ol class="steps">
-        <li>Tab <strong>Talent Profiles</strong></li>
-        <li>Note your situation: job seeker, recently laid off, freelancer, olim, etc.</li>
-        <li>Languages, max travel, hourly rate (NIS), LinkedIn link</li>
-      </ol>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="YOUR_GOOGLE_SHEET_URL" target="_blank" rel="noopener">Talent Profiles sheet →</a>
-      </div>
-    </div>
+      <section class="card card-wiki" id="wiki" aria-labelledby="wiki-heading">
+        <span class="tag tag-wiki">Community wiki</span>
+        <h2 id="wiki-heading">How can the community add knowledge resources?</h2>
+        <p><strong>Open Board Israel works like a lightweight wiki.</strong> Anyone with edit access to the shared spreadsheet can add vetted resources — labor law attorneys, HR networks, government offices, olim services, and other job-search tools. Listings are community-contributed, not endorsed by the site owner.</p>
 
-    <div class="card">
-      <span class="tag tag-warn">Laid off?</span>
-      <h2>Know your rights after termination</h2>
-      <p>Severance (פיצויי פיטורים), notice pay (הודעה מוקדמת), pension payouts, dismissal hearings (שימוע), and protected categories — plain English with Hebrew terms.</p>
-      <div class="btn-row">
-        <a class="btn btn-secondary" href="YOUR_GOOGLE_DOC_URL" target="_blank" rel="noopener">Employment law doc →</a>
-      </div>
-    </div>
+        <h3>Wiki categories you can add</h3>
+        <div class="wiki-cats">
+          <div class="wiki-cat">
+            <strong>Labor law attorneys</strong>
+            Employment lawyers for severance, wrongful dismissal, and שימוע — include city, languages, and website.
+          </div>
+          <div class="wiki-cat">
+            <strong>HR &amp; recruitment</strong>
+            Recruiters, referral-friendly HR contacts, and hiring networks.
+          </div>
+          <div class="wiki-cat">
+            <strong>Government &amp; official</strong>
+            Bituach Leumi, Ministry of Economy, employment bureaus, and official wage sources.
+          </div>
+          <div class="wiki-cat">
+            <strong>Olim &amp; absorption</strong>
+            Aliyah employment programs, Ulpan-linked job help, and newcomer networks.
+          </div>
+          <div class="wiki-cat">
+            <strong>Career &amp; training</strong>
+            Resume workshops, tech bootcamps, and re-skilling programs in Israel.
+          </div>
+          <div class="wiki-cat">
+            <strong>Other trusted resources</strong>
+            Mental health support, financial planning after layoff, or industry-specific groups.
+          </div>
+        </div>
 
-    <div class="card">
-      <span class="tag">Reference</span>
-      <h2>Full Israeli employment law (English)</h2>
-      <p>Minimum wage, hours, vacation, sick leave, contracts, employee vs freelancer. Community-editable — not legal advice.</p>
-      <div class="btn-row">
-        <a class="btn btn-secondary" href="YOUR_GOOGLE_DOC_URL" target="_blank" rel="noopener">Browse all sections →</a>
-      </div>
-    </div>
+        <h3>How to contribute (about 1 minute)</h3>
+        <ol class="steps">
+          <li>Open the spreadsheet → tab <strong>Community Resources</strong></li>
+          <li>Add category, resource name, short description, city/region, languages, and link or contact</li>
+          <li>Optionally add your name and a <strong>Last verified</strong> date</li>
+          <li>Do not post private ID numbers, passwords, or full home addresses</li>
+        </ol>
+        <p><strong>TLDR:</strong> Think Wikipedia meets a shared spreadsheet — one row per resource, editable by the community.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit#gid=1509050488" target="_blank" rel="noopener noreferrer">Community Resources wiki tab</a>
+        </div>
+      </section>
 
-    <div class="warn">
-      <strong>Admin:</strong> Replace <code>YOUR_GOOGLE_SHEET_URL</code> and <code>YOUR_GOOGLE_DOC_URL</code> in this file with your shared links. Deploy via Cloudflare Pages project <strong>danielrosenthal-helpolim</strong>.
-    </div>
+      <section class="card" id="rights" aria-labelledby="rights-heading">
+        <span class="tag tag-warn">Laid off?</span>
+        <h2 id="rights-heading">What rights do employees have after termination in Israel?</h2>
+        <p><strong>Severance (פיצויי פיטורים), notice pay (הודעה מוקדמת), pension payouts, dismissal hearings (שימוע), and protected categories</strong> are summarized in plain English with Hebrew terms. This is educational reference material only — not a substitute for a lawyer.</p>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="/board/law/#if-you-were-recently-laid-off--start-here">Employment law — laid off? start here</a>
+          <a class="btn btn-secondary" href="https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit#gid=1509050488" target="_blank" rel="noopener noreferrer">Find a labor law attorney</a>
+        </div>
+      </section>
+
+      <section class="card" id="law" aria-labelledby="law-heading">
+        <span class="tag">Reference</span>
+        <h2 id="law-heading">Where can I read Israeli employment law in English?</h2>
+        <p><strong>The community employment law document covers minimum wage, hours, vacation, sick leave, contracts, and employee vs. freelancer status.</strong> It is community-editable and updated periodically. Verify critical figures with official sources or an attorney.</p>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="/board/law/">Browse all sections</a>
+        </div>
+      </section>
+
+    </main>
 
     <footer>
       <p><a href="/">Daniel's Corner</a> · Personal CV help · <a href="mailto:dan72ros@gmail.com">dan72ros@gmail.com</a></p>
-      <p>Community resource · Min wage Apr 2026: ₪6,443.85/mo</p>
+      <p><a href="/board/law/">Employment law reference</a> · <a href="https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit">Open spreadsheet</a></p>
+      <p>Community resource · Not legal advice · Min wage Apr 2026: ₪6,443.85/mo</p>
+      <p>Location: Israel · Language: English</p>
     </footer>
   </div>
 </body>
