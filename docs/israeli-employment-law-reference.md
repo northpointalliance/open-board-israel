@@ -5,7 +5,7 @@
 **Who this is for:** Job seekers across Israel — including people **recently laid off** in tech and other sectors, olim, freelancers, and anyone checking what they're owed or what's required of employers. Olim-specific notes appear where relevant but the rights below apply to **all employees** under Israeli law.
 
 > **Pinned:** Minimum wage from April 1, 2026 = **₪6,443.85/month** (full-time).  
-> **Recently laid off?** Read [If you were recently laid off — start here](#if-you-were-recently-laid-off--start-here) first.  
+> **Recently laid off?** Read [If you were recently laid off — start here](#if-you-were-recently-laid-off--start-here) first, then [§18 unemployment — Taasuka & Bituach Leumi](#18-unemployment-benefits-taasuka-bituach-leumi).  
 > **Add labor law attorneys** under **Community Resources** in the [spreadsheet](https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit), not only here.
 
 **Last community review:** July 2026  
@@ -23,13 +23,13 @@ When hundreds or thousands are let go in a wave, the same rules still apply to *
 | How much notice should I have received? | §8 — Prior notice | **הודעה מוקדמת** |
 | Am I owed severance? | §7 — Severance pay | **פיצויי פיטורים** |
 | Is severance in my pension fund? | §7 — Section 14 | **סעיף 14** |
-| Can I register for unemployment? | Bituach Leumi (not covered in detail here) | **דמי אבטלה** |
+| Can I register for unemployment? | §18 — Unemployment (דמי אבטלה) | **דמי אבטלה** |
 | Was the layoff discriminatory or retaliatory? | §11 — Equal opportunities | **שוויון הזדמנויות** |
 | Employee or misclassified contractor? | §14 — Freelancers vs employees | **עובד / עצמאי** |
 
 **Mass layoff note:** Israeli law does **not** have a separate "mass redundancy" regime — each employee still gets an **individual hearing**, even when whole teams are cut. Redundancy can simplify the substantive reason but **not** the procedure.
 
-**Action checklist:** (1) Request written termination letter and final payslip. (2) Check pension/provident fund for severance component. (3) Compare notice period to §8 tables. (4) Ask if a shimu'a was held — if not, consult a lawyer. (5) Register with Employment Service / Bituach Leumi as needed.
+**Action checklist:** (1) Request written termination letter and final payslip. (2) Check pension/provident fund for severance component. (3) Compare notice period to §8 tables. (4) Ask if a shimu'a was held — if not, consult a lawyer. (5) **Register with Taasuka (Employment Service) immediately** and file for unemployment at Bituach Leumi — see §18.
 
 ---
 
@@ -358,8 +358,117 @@ For **short gigs at hourly NIS rates** (community talent board), clarify in writ
 | Minimum wage Apr 2026 | 2026-07 | Template | Update every April 1 |
 | Reservist protection period | — | — | Check emergency regs |
 | Convalescence daily rate | — | — | Check Ministry extension |
+| Unemployment benefit rates (basic daily amount) | 2026-07 | Template | Verify Jan 1 updates annually |
 
 *Add rows as community members confirm figures.*
+
+---
+
+## 18. Unemployment benefits (דמי אבטלה) — Taasuka & Bituach Leumi
+
+**Hebrew terms:** דמי אבטלה (unemployment benefits) · שירות התעסוקה / **Taasuka** (Israel Employment Service) · לשכת התעסוקה (employment bureau) · ביטוח לאומי (Bituach Leumi / National Insurance)
+
+**Critical:** You must deal with **both** agencies. **Taasuka** registers you as unemployed and tracks your job-search attendance. **Bituach Leumi** processes your claim and **pays** the money — but only for days Taasuka confirms you reported. Skipping either office blocks or stops payment.
+
+**Not legal advice.** Rules change; forms are mainly in Hebrew. Use official sites or ask for help from a Hebrew speaker, olim advisor, or employment lawyer if needed.
+
+### Who may be eligible (summary)
+
+Typical requirements for salaried employees ([Bituach Leumi](https://www.btl.gov.il/benefits/Unemployment/Pages/zakaut.aspx), [gov.il](https://www.gov.il/en/service/unemployment_benefits)):
+
+- Age **20–67**
+- Worked as a **salaried employee** (שכיר) and left employment
+- **12 months of insured work** within the **last 18 months** before first registering at Taasuka (need not be consecutive or one employer)
+- **Registered at Taasuka** as unemployed and **attending** on required dates
+- Israeli citizenship (verify current rules for permanent residents / olim on gov.il)
+
+**Resignation:** If you quit without justified cause, benefits usually start only after a **90-day waiting period** from your last work day.
+
+**Refusing work or training:** If Taasuka offers suitable work, training, or retraining and you decline, you may face a **90-day payment freeze** and **30 days deducted** from your entitlement — each refusal.
+
+### Step-by-step — do not miss dates
+
+| Step | Where | When | What happens |
+|------|-------|------|--------------|
+| **1. Register online** | [Taasuka / Employment Service](https://www.taasuka.gov.il) or combined form via [National ID system](https://www.gov.il/en/service/unemployment_benefits) | **Immediately** when employment ends | You are entered as job-seeking. Delay can **forfeit** rights. |
+| **2. First in-person appearance** | Your local **employment bureau** (לשכת התעסוקה) | Within **14 days** of online registration | Required so entitlement is not harmed. Follow Taasuka instructions for your branch. |
+| **3. Submit unemployment claim** | [Bituach Leumi — Form 1500](https://www.btl.gov.il/benefits/Unemployment/Pages/hancayot-avtala.aspx) (online, post, fax, or branch) | Within **12 months** of first Taasuka registration | Can often be combined with Taasuka registration in **one online form** via National ID. |
+| **4. Employer wage data** | Employer → Bituach Leumi | Before / with claim | Employer should transmit **Form 100** (salary summary). If not, get **Form 1514** (employer confirmation of employment period & salary) and attach it. |
+| **5. Ongoing attendance** | Taasuka — dates they assign | On **every scheduled date** | Missing a date = **no payment** for days from your last appearance until the next one. |
+| **6. Receive payment** | Bituach Leumi → your bank | Monthly | Bituach Leumi pays based on **Taasuka's monthly report** of your attendance days (previous month). Track via [Bituach Leumi personal service](https://www.btl.gov.il). |
+| **7. Return to work** | Bituach Leumi website | As soon as you start work | Report immediately — overpayment must be returned. |
+
+### What to bring / prepare
+
+**For Taasuka (first visit and as requested):**
+
+- **Teudat zehut** (Israeli ID) or valid ID / visa documents
+- **Termination letter** (מכתב פיטורים) or employer letter showing **last work day** and reason (dismissal, layoff, end of contract)
+- **Last payslip** (תלוש שכר) — even for a partial final month
+- **Employment period confirmation** from employer, **or** payslips showing work days over **12 of the last 18 months**
+- Phone number and email; know your **home address** (assigned to nearest bureau)
+- If in vocational training — confirmation from Taasuka
+
+**For Bituach Leumi claim:**
+
+- Same documents if Form 100 was not already sent by employer
+- **Bank account details** (branch, account) for deposits
+- Scanned documents: black & white, max **500 KB** each, **10 MB** total (online submission)
+
+### What to expect at Taasuka
+
+- Registration interview about your skills, location, and job search
+- **Scheduled reporting dates** (התייצבות) — you must appear in person (or as instructed) to show you are actively seeking work
+- Job listings, referrals, and sometimes **training** offers — refusals affect payment (see above)
+- Staff speak mainly **Hebrew**; bring a friend or translator if needed
+- Taasuka **does not pay you** — it only reports attendance to Bituach Leumi
+
+### How payment works
+
+1. Each month, Taasuka sends Bituach Leumi the number of **attendance days** you earned in the prior month.
+2. Bituach Leumi calculates your **daily rate** from your average salary in the **6 months before** your first Taasuka registration: total insured income ÷ **150** = average daily salary.
+3. That rate is applied in **percentage tiers** against the statutory basic daily amount (**₪415** as of 1 Jan 2026 — verify annually).
+4. Benefits are paid for **weekdays (Sunday–Friday)** only — **not Saturday**; **holidays** may count if not on Shabbat.
+5. **Daily caps** (2026): approx. **₪550.76/day** for the first **125** paid days; approx. **₪367.17/day** from day **126** onward ([Bituach Leumi rates](https://www.btl.gov.il/English%20Homepage/Benefits/Unemployment%20Insurance/Amount/Pages/Benefitrates.aspx)).
+6. Use the official [unemployment benefit calculator](https://www.btl.gov.il/English%20Homepage/Calculators/unemploymentbenefit/Pages/AvtalaCalcNew.aspx) for an estimate.
+
+### How long benefits last
+
+Maximum **paid days** depend on **age** and **dependents**. Days must be used within **12 months** starting the **1st of the month** of your **first Taasuka appearance** (special rules for some women 57–67: up to **300 days** over **18 months**).
+
+| Age group | Up to 2 dependents | 3+ dependents |
+|-----------|-------------------|---------------|
+| Up to 25 | 50 days | 138 days |
+| 25–28 | 67 days | 138 days |
+| 28–35 | 100 days | 138 days |
+| 35–45 | 138 days | 175 days |
+| 45+ | 175 days | 175 days |
+
+**Women aged 57–67** born from **1.1.1960**: up to **300 days** over **18 months** ([source](https://www.btl.gov.il/English%20Homepage/Benefits/Unemployment%20Insurance/Pages/PeriodEntitlement.aspx)).
+
+**Repeat claims:** If you claim again within **4 years** and are **under 40**, total days across claims may be capped at **180%** of your maximum — complex rules apply; read Bituach Leumi's "repeat unemployment" pages.
+
+When entitlement runs out, check eligibility for **income support** (הבטחת הכנסה) via Bituach Leumi.
+
+### Taasuka rules — do not miss dates (summary)
+
+- Register **the day you stop working** if possible — not weeks later
+- Online signup → **in-person bureau visit within 14 days**
+- **Every** scheduled התייצבות date is mandatory
+- **Miss one appearance** → **zero payment** for the gap until your **next** valid appearance
+- Keep Taasuka's letters / SMS / online appointments in your calendar
+- Notify Taasuka if you do **miluim** (reserve duty) — rules coordinate unemployment days with reserve pay
+- Report **new employment** immediately to Bituach Leumi
+
+### Official links
+
+- [gov.il — Claim unemployment benefit (English)](https://www.gov.il/en/service/unemployment_benefits)
+- [Bituach Leumi — Unemployment hub](https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx)
+- [Taasuka / Employment Service registration](https://www.taasuka.gov.il)
+- [Bituach Leumi branch locator](https://www.btl.gov.il/snifim/Pages/default.aspx)
+- [Community wiki — labor law attorneys & advisors](https://docs.google.com/spreadsheets/d/1SaaevFI8h0brfbbkFENciGNd7nIoe9mi_Y20z8Kr0fc/edit#gid=1509050488)
+
+**TLDR:** Register **Taasuka** immediately, show up on **every** assigned date, file **Bituach Leumi** Form 1500 within 12 months, bring **termination letter + payslips**, and understand benefits are **limited days** paid only for days Taasuka confirms you reported.
 
 ---
 
