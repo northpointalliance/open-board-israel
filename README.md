@@ -8,9 +8,9 @@ Open, collaborative resources for **anyone looking for work in Israel** — incl
 
 | Page | URL |
 |------|-----|
-| **Daniel's Corner** — personal CV & job help | https://danielrosenthal-helpolim.pages.dev/ |
-| **Open Board Israel** — community jobs & law | https://danielrosenthal-helpolim.pages.dev/board/ |
-| Cloudflare dashboard | [danielrosenthal-helpolim](https://dash.cloudflare.com/df9a37eae256d721af313f9ccbb08bf4/pages/view/danielrosenthal-helpolim) |
+| **Daniel's Corner** — personal CV & job help | https://open-board-israel.pages.dev/ |
+| **Open Board Israel** — community jobs & law | https://open-board-israel.pages.dev/board/ |
+| Cloudflare dashboard | [open-board-israel](https://dash.cloudflare.com/df9a37eae256d721af313f9ccbb08bf4/pages/view/open-board-israel) |
 
 ---
 
@@ -40,13 +40,13 @@ Open, collaborative resources for **anyone looking for work in Israel** — incl
 
 ### 3. Deploy to Cloudflare Pages
 
-Project: **danielrosenthal-helpolim** ([dashboard](https://dash.cloudflare.com/df9a37eae256d721af313f9ccbb08bf4/pages/view/danielrosenthal-helpolim))
+Project: **open-board-israel** ([dashboard](https://dash.cloudflare.com/df9a37eae256d721af313f9ccbb08bf4/pages/view/open-board-israel))
 
 ```
 open-board-israel/
-├── index.html          → danielrosenthal-helpolim.pages.dev/
+├── index.html          → open-board-israel.pages.dev/
 └── board/
-    └── index.html      → danielrosenthal-helpolim.pages.dev/board/
+    └── index.html      → open-board-israel.pages.dev/board/
 ```
 
 1. Connect this folder to the Cloudflare Pages project (Git or **Direct Upload**)
